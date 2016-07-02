@@ -1,0 +1,34 @@
+{
+  "name": "redux-universal-mixpanel",
+  "version": "0.1.0",
+  "description": "Universal Mixpanel middleware for react/redux applications",
+  "main": "lib/index.js",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "rm -rf lib/ && ./node_modules/.bin/babel -d lib/ src/",
+    "test": "./node_modules/.bin/babel ./spec/index.js | tap-dot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iuriikozuliak/redux-universal-mixpanel.git"
+  },
+  "keywords": [
+    "mixpanel",
+    "middleware",
+    "react",
+    "redux",
+    "universal"
+  ],
+  "author": "Iurii Kozuliak <i.kozuliak@gmail.com> (https://github.com/iuriikozuliak)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iuriikozuliak/redux-universal-mixpanel/issues"
+  },
+  "homepage": "https://github.com/iuriikozuliak/redux-universal-mixpanel#readme",
+  "devDependencies": {
+    "babel-cli": "^6.10.1",
+    "babel-core": "^6.10.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-stage-0": "^6.5.0"
+  }
+}
