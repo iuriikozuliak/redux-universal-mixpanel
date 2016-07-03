@@ -4,7 +4,7 @@ import fetch      from 'isomorphic-fetch';
 const MIXPANEL_ENDPOINT  = 'https://api.mixpanel.com/track';
 const makeRequest        = ({ endpoint, payload }) => fetch(`${endpoint}/?data=${payload}`);
 
-export default token => {
+export default (token) => {
   if (!token || typeof token !== 'string') {
     throw new Error('Please provide Mixpanel Token');
   }
