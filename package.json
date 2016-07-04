@@ -1,6 +1,6 @@
 {
   "name": "redux-universal-mixpanel",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Universal Mixpanel middleware for react/redux applications",
   "main": "lib/index.js",
   "scripts": {
